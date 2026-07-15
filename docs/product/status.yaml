@@ -31,8 +31,8 @@ runs:
     headline: "Migrated to Forgejo (backup-only, no deploy); WIP rescued from both copies; NAS copy archived"
   - skill: product-tracker
     stage: build
-    date: 2026-07-12
+    date: 2026-07-14
     status: done
     artifacts: [docs/product/status.yaml, CLAUDE.md]
     headline: "WS2 repo standardization: product-status ledger + CLAUDE.md added"
-updated: 2026-07-12
+updated: 2026-07-14
