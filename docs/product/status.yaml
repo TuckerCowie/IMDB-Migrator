@@ -1,0 +1,38 @@
+# product-status/v1 — machine-readable project ledger (see product-tracker skill).
+# Snapshot block: overwrite freely. runs: append-only (supersede, never delete).
+schema: product-status/v1
+slug: imdb-migrator
+name: IMDB Migrator
+brand_name: null
+one_liner: >-
+  Python automation tool that migrates ratings and watchlists between IMDB
+  accounts (Selenium-driven export/import).
+status: parked              # backup-only; no active development or deploy
+mode: passion
+areas: [personal/media]     # provisional — taxonomy (agent-workflows conventions/areas.yaml) being finalized in WS1
+repo: ~/Dev/imdb-migrator
+canonical_remote: forgejo
+deploy:
+  env: null
+  url: null
+  pipeline: null
+links:
+  dossier: docs/product/
+  vault: "[[IMDB Migrator]]"
+next_action: "None — parked as backup; revisit only if an account migration is needed again"
+blocked_on: null
+kill_thresholds: []
+runs:
+  - skill: brownfield-migrate
+    stage: build
+    date: 2026-07-08
+    status: done
+    artifacts: []
+    headline: "Migrated to Forgejo (backup-only, no deploy); WIP rescued from both copies; NAS copy archived"
+  - skill: product-tracker
+    stage: build
+    date: 2026-07-12
+    status: done
+    artifacts: [docs/product/status.yaml, CLAUDE.md]
+    headline: "WS2 repo standardization: product-status ledger + CLAUDE.md added"
+updated: 2026-07-12
