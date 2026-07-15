@@ -9,9 +9,14 @@ one_liner: >-
   accounts (Selenium-driven export/import).
 status: parked              # backup-only; no active development or deploy
 mode: passion
-areas: [personal/media]     # provisional — taxonomy (agent-workflows conventions/areas.yaml) being finalized in WS1
+areas: [personal/media]
 repo: ~/Dev/imdb-migrator
 canonical_remote: forgejo
+mirror:
+  github: https://github.com/TuckerCowie/IMDB-Migrator
+  sync_on_commit: true
+  last_error: ""
+  verified: 2026-07-14      # three-way HEAD parity local == Forgejo == GitHub
 deploy:
   env: null
   url: null
